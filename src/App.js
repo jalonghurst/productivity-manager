@@ -1,4 +1,7 @@
-import logo from './logo.svg';
+import react from 'react';
+import Homepage from './Pages/Homepage';
+import Taskoverview from './Pages/Taskoverview';
+import Pomodorotimer from './Pages/Pomodorotimer';
 import './App.css';
 
 function App() {

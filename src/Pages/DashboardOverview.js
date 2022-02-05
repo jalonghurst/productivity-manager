@@ -39,7 +39,8 @@ const DashboardOverview = () => {
   return (
     <ThemeProvider theme={darkTheme}>
       <div className={classes.container}>
-      <Button>Dashboard</Button>
+      <h3>Dashboard Overview</h3>
+      <Button>See full dashboard</Button>
       </div>
     </ThemeProvider>
   );

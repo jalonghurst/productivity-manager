@@ -10,7 +10,7 @@ const Homepage = () => {
   <>
   <Banner/>
   <DashboardOverview/>
-  <Pomodoro/>
+  <Pomodoro/> 
   <Taskoverview/>
   </>
   )

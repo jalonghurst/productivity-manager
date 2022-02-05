@@ -1,13 +1,16 @@
 import React from 'react';
+
 import Banner from '../components/Banner/Banner';
-import Pomodorotimer from './Pomodorotimer';
+import DashboardOverview from './DashboardOverview';
+import Pomodoro from './Pomodoro/Pomodoro';
 import Taskoverview from './Taskoverview'
 
 const Homepage = () => {
   return (
   <>
   <Banner/>
-  <Pomodorotimer/>
+  <DashboardOverview/>
+  <Pomodoro/>
   <Taskoverview/>
   </>
   )

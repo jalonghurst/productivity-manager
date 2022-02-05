@@ -1,5 +1,4 @@
 import { Container, makeStyles, Typography, Button } from "@material-ui/core";
-import SelectButton from "../SelectButton";
 // import Carousel from "./Carousel";
 
 const useStyles = makeStyles((theme) => ({
@@ -58,8 +57,7 @@ function Banner() {
             Use the productivity tools and login to view your progress
           </Typography>
         </div>
-        <Button>View Dashoard</Button>
-        <SelectButton>View Dashboard</SelectButton>
+        <Button>Go to pomodoro timer</Button>
         {/* <Carousel /> */}
       </Container>
     </div>

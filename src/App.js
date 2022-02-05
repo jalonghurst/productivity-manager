@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core";
 import Header from './components/Header';
 import Homepage from './Pages/Homepage';
 import Taskoverview from './Pages/Taskoverview';
-import Pomodorotimer from './Pages/Pomodorotimer';
+import Pomodoro from './Pages/Pomodoro/Pomodoro';
 import './App.css';
 
 const useStyles = makeStyles(() => ({
@@ -25,7 +25,7 @@ function App() {
         <Header />
           <Route path="/" component={Homepage} exact />
           <Route path="/Taskoverview" component={Taskoverview} exact />
-          <Route path="/Pomodorotimer" component={Pomodorotimer} exact />
+          <Route path="/Pomodoro" component={Pomodoro} exact />
       </div>
     </BrowserRouter>
   );

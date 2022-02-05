@@ -1,4 +1,5 @@
-import { Container, makeStyles, Typography } from "@material-ui/core";
+import { Container, makeStyles, Typography, Button } from "@material-ui/core";
+import SelectButton from "../SelectButton";
 // import Carousel from "./Carousel";
 
 const useStyles = makeStyles((theme) => ({
@@ -44,7 +45,7 @@ function Banner() {
               fontFamily: "Montserrat",
             }}
           >
-          Stay focused
+          Stay Focused
           </Typography>
           <Typography
             variant="subtitle2"
@@ -57,6 +58,8 @@ function Banner() {
             Use the productivity tools and login to view your progress
           </Typography>
         </div>
+        <Button>View Dashoard</Button>
+        <SelectButton>View Dashboard</SelectButton>
         {/* <Carousel /> */}
       </Container>
     </div>

@@ -8,13 +8,14 @@ import {
 const DashboardOverview = () => {
   const useStyles = makeStyles((theme) => ({
     container: {
-      width: "75%",
+      width: "100%",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
-      justifyContent: "center",
+      justifyContent: "space-around",
       marginTop: 25,
       padding: 40,
+      textAlign: "center",
       [theme.breakpoints.down("md")]: {
         width: "100%",
         marginTop: 0,
@@ -40,7 +41,7 @@ const DashboardOverview = () => {
     <ThemeProvider theme={darkTheme}>
       <div className={classes.container}>
       <h3>Dashboard Overview</h3>
-      <Button>See full dashboard</Button>
+      <Button>Login to See full dashboard</Button>
       </div>
     </ThemeProvider>
   );

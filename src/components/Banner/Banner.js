@@ -54,7 +54,7 @@ function Banner() {
               fontFamily: "Montserrat",
             }}
           >
-            Use our productivity tools and login to view your progress
+            Use the productivity tools and login to view your progress
           </Typography>
         </div>
         {/* <Carousel /> */}

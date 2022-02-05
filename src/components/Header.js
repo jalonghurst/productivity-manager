@@ -64,7 +64,7 @@ import {
               >
                 Productivity Pro
               </Typography>
-
+{/* Add dashboard button and icon */}
          {/* User Menu for profile, logout etc. */}
          <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">

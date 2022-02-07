@@ -1,15 +1,59 @@
 import React from "react";
-import { ButtonGroup } from "@material-ui/core";
+import { ButtonGroup, Typography } from "@material-ui/core";
 import TimerButton from "./TimerButton";
 import Time from "./Time";
+import {
+  createTheme,
+  withStyles,
+} from "@material-ui/core/styles";
 
-import "../../Styles.css"; // TODO: improve styling
 
 const default_minutes = 25;
 const seconds = 60;
 const minutes = 5;
 
-export default class Pomodoro extends React.Component {
+const styles = theme => ({
+  title: {
+    flex: 1,
+    color: "gold",
+    fontFamily: "Montserrat",
+    fontWeight: "bold",
+    justifyContent: "center",
+    textAlign: "center",
+    cursor: "pointer",
+  },
+    
+  pomodoro: {
+    margin: "0 auto",
+    height: 400,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    color: "gold",   
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+  
+  },
+  tagline: {
+    display: "flex",
+    height: "40%",
+    flexDirection: "column",
+    justifyContent: "center",
+    textAlign: "center",
+  },
+});
+
+const darkTheme = createTheme({
+  palette: {
+    primary: {
+      main: "#fff",
+    },
+    type: "dark",
+  },
+});
+
+class Pomodoro extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -62,14 +106,26 @@ export default class Pomodoro extends React.Component {
     let MHSTime = measuredTime.toISOString().substr(11, 8);
 
     return (
-      <div className="pomodoro">
-        <div id="title">simple pomodoro</div>
+      <div theme={darkTheme} className={this.props.classes.pomodoro}>
+        <div className={this.props.classes.title}>Pomodoro</div>
+        <div className={this.props.classes.tagline}>
+        <Typography
+            variant="subtitle2"
+            style={{
+              color: "gold",
+              textTransform: "capitalize",
+              fontFamily: "Montserrat",
+            }}
+          >
+            A simple pomodoro timer
+          </Typography>
+        </div>
         <Time
           decrement={this.decrement}
           incremement={this.increment}
           time={MHSTime}
         /> 
-        <div>
+        <div >
           <ButtonGroup>
             <TimerButton onClick={this.startTimer}>start</TimerButton>
             <TimerButton onClick={this.stopTimer}>stop</TimerButton>
@@ -80,3 +136,5 @@ export default class Pomodoro extends React.Component {
     );
   }
 }
+
+export default withStyles(styles)(Pomodoro);

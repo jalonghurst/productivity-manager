@@ -57,7 +57,7 @@ function Banner() {
             Use the productivity tools and login to view your progress
           </Typography>
         </div>
-        <Button>Login</Button>
+        <Button>Go to pomodoro timer</Button>
         {/* <Carousel /> */}
       </Container>
     </div>

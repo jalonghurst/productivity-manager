@@ -17,6 +17,7 @@ import {
   import IconButton from '@mui/material/IconButton';
   import Menu from '@mui/material/Menu';
   import Tooltip from '@mui/material/Tooltip';
+  import DashboardIcon from '@mui/icons-material/Dashboard';
 
   const useStyles = makeStyles((theme) => ({
     title: {
@@ -64,6 +65,8 @@ import {
               >
                 Productivity Pro
               </Typography>
+              <IconButton></IconButton>
+              <DashboardIcon>Dashboard</DashboardIcon>
 {/* Add dashboard button and icon */}
          {/* User Menu for profile, logout etc. */}
          <Box sx={{ flexGrow: 0 }}>

@@ -54,7 +54,7 @@ function Banner() {
               fontFamily: "Montserrat",
             }}
           >
-            Use the productivity tools and login to view your progress
+            Use the productivity tools and login to view your progress and access more features
           </Typography>
         </div>
         <Button>Go to pomodoro timer</Button>

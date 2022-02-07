@@ -33,6 +33,7 @@ const styles = theme => ({
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
+    alignItems: "center",
   
   },
   tagline: {

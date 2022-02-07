@@ -14,7 +14,7 @@ const minutes = 5;
 
 const styles = theme => ({
   title: {
-    flex: 1,
+    
     color: "gold",
     fontFamily: "Montserrat",
     fontWeight: "bold",
@@ -38,7 +38,7 @@ const styles = theme => ({
   },
   tagline: {
     display: "flex",
-    height: "40%",
+    height: "20%",
     flexDirection: "column",
     justifyContent: "center",
     textAlign: "center",
